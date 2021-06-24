@@ -4,7 +4,7 @@ Code adapted from [Aladdin Persson](https://www.youtube.com/channel/UCkzW5JSFwvK
 
 # Description
 This is my project on Deep Learning. It generates traditional thai house images using DCGANs.
-Total training images = 1,000 images (10,000 after augmented)
+Total training images = 1,000 images (10,000 after augmented). The result images are still not good. More training, data, and tuning needed.
 
 
 # Instructions
@@ -34,15 +34,41 @@ See section 1, 2 in the notebook
 - Weights will be saved every epochs in `saved_models/`
 - Tensorboard logs will be in `tensorboard_logs/`
 
+<br>
+
+**Training with 50epochs**
+
+<br>
+
 ![Image](attachments/training1.png)
-![Image](attachments/training2.jpg)
+
+<br>
+
+**Tensorboard**
+
+<br>
+
+![Image align="center"](attachments/training2.jpg)
 
 ### [3] Inference
-See section 3, 4 in the notebook
+See section 3, 4 in the notebook. Generate one random tensor and put into generator.
+
+<br>
+
 ![Image](attachments/result1.png)
-![Image](attachments/result2.jpg)
+
+<br>
+
+![Image](attachments/result2.png)
 
 ### [3] Loss
-See section 5 in the notebook
+See section 5 in the notebook. But as you can see, generator loss is still not converging.
+
+<br>
+
+
 ![Image](attachments/loss1.png)
-![Image](attachments/loss2.jpg)
+
+<br>
+
+![Image](attachments/loss2.png)
